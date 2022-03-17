@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api-app
-        image: exastro/epochsampleappui:master.20210708183910
+        image: ydkarino/epoch-sample-api:master.20220317-112328
         ports:
         - name: http
           containerPort: 8000
@@ -47,7 +47,7 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: 31001
+    nodePort: 31002
   selector:
     name: api-app
 
@@ -65,6 +65,6 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: 32001
+    nodePort: 32002
   selector:
     name: api-app
